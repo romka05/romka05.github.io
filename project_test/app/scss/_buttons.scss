@@ -1,0 +1,29 @@
+  // header form button
+
+  .btn-form {
+    position: relative;
+    display: inline-block;
+    padding: 8px 0;
+    height: 50px;
+    text-align: center;
+    font-family: 'SFUI Display', sans-serif;
+    color: #ffffff;
+    font-family: "SFUI Display";
+    font-size: 18px;
+    background-color: $active-color;
+    border-style: none;
+    cursor: pointer;
+    z-index: 5;
+    right: 5px;
+
+
+    &:hover {
+      background-color: darken($active-color, 5);
+
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
