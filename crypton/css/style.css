@@ -6039,7 +6039,7 @@ html {
     font-size: 1rem;
   }
   .team__content-box-text {
-    max-width: 280px;
+    max-width: 300px;
   }
   .team__content-box-img {
     height: 250px;
@@ -6565,8 +6565,9 @@ html {
     max-width: 280px;
   }
   .team__content-box-img {
-    height: 250px;
-    width: 250px;
+    height: 100%;
+    max-width: 250px;
+    width: 100%;
   }
   #myMenu {
     width: 100%;
@@ -6875,12 +6876,11 @@ html {
     font-size: 1rem;
   }
   .team__content-box-text {
-    max-width: 280px;
+    max-width: 300px;
+    width: 100%;
+    padding: 0;
   }
-  .team__content-box-img {
-    height: 250px;
-    width: 250px;
-  }
+
   #myMenu {
     width: 100%;
   }
