@@ -5281,7 +5281,7 @@ html {
   justify-content: flex-end;
 }
 
-.header__menu_links {
+.header__menu_links .icon {
   display: none;
 }
 
