@@ -7266,10 +7266,10 @@ html {
   .input-wrapper .contacts__form-input-2 {
     margin-left: 0;
   }
-  .input-wrapper .contacts__form-input-2 input[type="email"] {
+  .input-wrapper .contacts__form-input-2 input[type="text"] {
     width: 570px;
   }
-  .input-wrapper .contacts__form-input input[type="name"] {
+  .input-wrapper .contacts__form-input input[type="text"] {
     width: 570px;
   }
   .wrap-container {
@@ -7356,10 +7356,10 @@ html {
   .input-wrapper .contacts__form-input-2 {
     margin-left: 0;
   }
-  .input-wrapper .contacts__form-input-2 input[type="email"] {
+  .input-wrapper .contacts__form-input-2 input[type="text"] {
     width: 570px;
   }
-  .input-wrapper .contacts__form-input input[type="name"] {
+  .input-wrapper .contacts__form-input input[type="text"] {
     width: 570px;
   }
   .wrap-container {
@@ -7442,10 +7442,10 @@ html {
     margin-left: 0;
     width: 100%;
   }
-  .input-wrapper .contacts__form-input-2 input[type="email"] {
+  .input-wrapper .contacts__form-input-2 input[type="text"] {
     width: 100%;
   }
-  .input-wrapper .contacts__form-input input[type="name"] {
+  .input-wrapper .contacts__form-input input[type="text"] {
     width: 100%;
   }
   .wrap-container {
