@@ -5777,7 +5777,8 @@ html {
 }
 
 .contacts__form-box .contacts__form-input-2 input[name="your-email"] {
-  width: 380px;
+  max-width: 380px;
+  width:100%;
   position: relative;
   display: inline-block;
   border: none;
