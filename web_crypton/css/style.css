@@ -5715,7 +5715,7 @@ html {
   left: 10px;
 }
 
-.contacts__form-box .contacts__form-input input[type="name"] {
+.contacts__form-box .contacts__form-input input[type="text"] {
   width: 380px;
   position: relative;
   display: inline-block;
@@ -5739,7 +5739,7 @@ html {
   background-size: 0% 1px;
 }
 
-.contacts__form-box .contacts__form-input input[type="name"]:focus {
+.contacts__form-box .contacts__form-input input[type="text"]:focus {
   border-color: transparent;
   outline: none;
   background-size: 100% 2px;
