@@ -1,0 +1,361 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  overflow-x: hidden;
+}
+
+.content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.footer {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.rate-star {
+  display: inline-block;
+  margin-right: 13px;
+}
+
+#modal {
+  display: none;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?ytssfg");
+  src: url("../fonts/icomoon.eot?ytssfg#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?ytssfg") format("truetype"), url("../fonts/icomoon.woff?ytssfg") format("woff"), url("../fonts/icomoon.svg?ytssfg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-balance-scale:before {
+  content: "\f24e";
+}
+
+.icon-heart:before {
+  content: "\e9da";
+}
+
+.card {
+  padding: 100px 0;
+  background-color: #eeecec;
+  height: 100%;
+}
+.card__img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 340px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 35px;
+  cursor: pointer;
+}
+.card__inner {
+  padding: 100px 0;
+  width: 100%;
+  min-height: 600px;
+  background-color: #f7f8f9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card__box {
+  padding: 35px 30px 60px 30px;
+  margin: 20px;
+  max-width: 530px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.card__box-code {
+  display: none;
+}
+.card__box.active .card__box-code {
+  display: block;
+}
+.card__box.active .card__buy {
+  display: block;
+}
+.card__box.active span {
+  display: none;
+}
+.card__box-code {
+  padding-bottom: 35px;
+  text-align: right;
+  color: #787e8e;
+  font-size: 20px;
+}
+.card__box .card__buy {
+  margin-top: 25px;
+  display: none;
+}
+.card__box .card__buy-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__box .card__buy .icon-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+}
+.card__box .card__buy .icon-box a + a {
+  margin-left: 20px;
+}
+.card__box .card__buy .heart,
+.card__box .card__buy .scale {
+  color: #787e8e;
+  font-size: 26px;
+  display: block;
+}
+.card__box .card__buy .card__btn {
+  display: block;
+  cursor: pointer;
+  padding: 15px 90px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 22px;
+  border: none;
+  border-radius: 50px;
+  background-color: #4aa852;
+}
+.card__box--hit {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  padding: 3px 12px;
+  color: #fff;
+  display: inline-block;
+  background-color: #e73b25;
+  border-radius: 4px;
+}
+.card__box span {
+  display: block;
+  padding-top: 20px;
+  color: #4eb3ed;
+  font-size: 22px;
+  font-weight: 400;
+}
+.card__box-discount {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  padding: 3px 0;
+  color: #fff;
+  display: inline-block;
+  width: 80px;
+  background-color: #e73b25;
+  border-radius: 4px;
+}
+.card__box-descr {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+  padding: 3px 0;
+  color: #fff;
+  border-radius: 4px;
+  max-width: 240px;
+  width: 100%;
+  display: inline-block;
+  background-color: #679b2f;
+}
+.card .product-name {
+  padding: 23px 0px;
+  font-weight: 400;
+  font-size: 26px;
+  color: #292b30;
+  max-width: 366px;
+  width: 100%;
+  line-height: 30px;
+}
+.card .rate__feedback {
+  display: inline-block;
+  color: #787e8e;
+}
+.card .product__item-star {
+  padding-bottom: 40px;
+}
+.card .price__name {
+  color: #787e8e;
+  padding-bottom: 12px;
+}
+.card .price__actual {
+  color: #ec4833;
+  font-weight: 600;
+  font-size: 26px;
+  display: inline-block;
+}
+.card .price__cashback {
+  display: inline-block;
+  margin-left: 20px;
+  max-width: 186px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #fdeeb9;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #2e384e;
+}
+.card .price__old {
+  font-weight: 500;
+  font-size: 19px;
+  color: #787e8e;
+  text-decoration: line-through;
+}
+
+@media (max-width: 1515px) {
+  .card__inner {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    padding: 0;
+  }
+
+  .card__box-discount {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .card__box-descr {
+    display: block;
+    margin: 20px auto 0;
+  }
+
+  .card__box--hit {
+    max-width: 50%;
+    display: block;
+    margin: 20px auto 0;
+  }
+}
+@media (max-width: 460px) {
+  .card .price__cashback {
+    display: block;
+    margin: 10px 0px 0px;
+  }
+
+  .price__old {
+    margin-top: 15px;
+  }
+
+  .card__box {
+    padding: 35px 10px 60px 10px;
+  }
+}
+@media (max-width: 400px) {
+  .card__img {
+    max-width: 340px;
+    width: 100%;
+    height: auto;
+  }
+
+  .card__box span {
+    font-size: 16px;
+  }
+
+  .card .product-name {
+    font-size: 16px;
+  }
+
+  .card__box .card__buy .card__btn {
+    padding: 10px 40px;
+  }
+
+  .card__box {
+    padding: 35px 10px 30px 10px;
+  }
+
+  .card__box-code {
+    text-align: center;
+  }
+}
